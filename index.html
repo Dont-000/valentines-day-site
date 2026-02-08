@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8e6f0;
+      text-align: center;
+      color: #6d3f73;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 20px;
+      color: #ff85a2;
+    }
+    .message {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    .video-container {
+      margin-top: 40px;
+    }
+    .heart {
+      font-size: 2em;
+      color: #ff6fb3;
+    }
+    .btn {
+      background-color: #ff6fb3;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will You Be My Valentine?</h1>
+
+  <div class="message" id="personalizedMessage">
+    <p><span id="valentineName"></span>Anagha,</p>
+    <p>
+
+I would like to say something to you.
+You make my days speacial, my smiles better and my time happier with your talks and texts.
+I like it when you smile and I love it when I am reason behind it. 
+Every tiny thing about you interests me more as I hear throug, 
+Each little tale and clue, makes me fall, deeper knwoing you. 
+Anagha, would you do the honour of being my Valentine!
+<span id="yourName">Guna Shekar,</span>  Your  admirer! ❤️</p>
+    <p class="heart">💖</p>
+</div>
+
+ <div class="image-container">
+  <img src="Pic2.png" width="80%" alt="Special Image">
+
+</div>
+
+<button class="btn" onclick="changeNames()">Submit</button>
+
+<script>
+  // Function to personalize the website
+  function changeNames() {
+    var valentineName = prompt("Enter your Valentine's Name:");
+    var yourName = prompt("Enter Your Name:");
+
+    // Insert names into personalized message
+    document.getElementById("valentineName").textContent = valentineName;
+    document.getElementById("yourName").textContent = yourName;
+  }
+</script>
+</body>
+</html>
+
+
